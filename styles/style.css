@@ -342,9 +342,6 @@
 
 .footer__social-list {
   list-style-type: none;
-}
-
-.footer__social-list {
   width: 240px;
   display: flex;
   justify-content: space-between;
