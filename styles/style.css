@@ -70,8 +70,11 @@ header {
 }
 
 .cover {
+  position: relative;
   text-transform: uppercase;
   color: #ffffff;
+  min-width: 1100px;
+  min-height: 757px;
 }
 
 .image {
@@ -84,6 +87,8 @@ header {
   position: absolute;
   width: 1100px;
   height: 757px;
+  left: 0px;
+  top: 0px;
   z-index: -1;
 }
 
@@ -96,8 +101,8 @@ header {
   position: absolute;
   width: 1100px;
   height: 757px;
-  left: 361px;
-  right: 361px;
+  left: 0px;
+  top: 0px;
   z-index: -2;
 }
 
@@ -176,7 +181,7 @@ header {
 .lots__heading {
   font-size: 40px;
   line-height: 46.96px;
-  margin-top: 210px;
+  margin-top: 180px;
   margin-left: 65px;
   margin-bottom: 26px;
   text-transform: uppercase;
@@ -200,6 +205,7 @@ header {
 }
 
 .card {
+  position: relative;
   min-width: 334px;
   min-height: 563px;
   display: flex;
@@ -209,6 +215,8 @@ header {
 
 .card_picture {
   position: absolute;
+  left: 0px;
+  top: 0px;
   width: 334px;
   height: 563px;
   z-index: -2;
