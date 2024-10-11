@@ -1,11 +1,9 @@
-* header {
+header {
   box-sizing: border-box;
-  height: 105px;
   width: 1052px;
   display: grid;
   grid-template-columns: 454px 148px 450px;
   grid-template-rows: 1fr;
-  font-family: "Raleway";
   font-size: 18px;
   font-weight: 400;
   line-height: normal;
@@ -19,7 +17,7 @@
   padding-right: 33px;
   display: grid;
   grid-template-columns: 98px 183px 110px;
-  grid-template-rows: 1fr;
+  grid-template-rows: 105px;
   align-items: center;
   justify-content: center;
   white-space: nowrap;
@@ -34,7 +32,7 @@
 }
 
 .header__link_active .header__link {
-  border-bottom: #ffffff;
+  border-bottom: transparent;
 }
 
 .header__links-list-item_no-bullit {
@@ -48,9 +46,13 @@
   width: 148px;
 }
 
+.contact {
+  font-style: normal;
+  line-height: 24.3px;
+}
+
 .header__contact {
-  padding-left: 186px;
-  list-style-type: none;
+  padding-left: 185px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -61,16 +63,21 @@
   text-decoration: none;
   border-bottom: 1px solid #000000;
 }
-.header__contact__address {
+
+.contact__address {
+  line-height: 23.4px;
   font-style: normal;
-  line-height: 24.3px;
-  text-align: left;
 }
 
 .cover {
   text-transform: uppercase;
   color: #ffffff;
-  font-family: "Raleway";
+}
+
+.image {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .cover_size_image {
@@ -89,7 +96,8 @@
   position: absolute;
   width: 1100px;
   height: 757px;
-  object-fit: cover;
+  left: 361px;
+  right: 361px;
   z-index: -2;
 }
 
@@ -101,6 +109,9 @@
 
 .aligned-text {
   display: block;
+}
+
+.aligned-text-left {
   text-align: left;
   line-height: 114px;
 }
@@ -108,13 +119,11 @@
 .aligned-text_center {
   line-height: 137px;
   margin-right: 27px;
-  display: block;
   text-align: center;
 }
 
 .aligned-text_right {
   line-height: 105px;
-  display: block;
   text-align: right;
 }
 .letter-spacing-extended {
@@ -146,9 +155,8 @@
 }
 
 .bet-button {
-  position: relative;
-  left: 34px;
-  bottom: 13px;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
   padding: 12px 32px 11px 31px;
   background: transparent;
   color: #ffffff;
@@ -157,6 +165,7 @@
   font-weight: 500;
   line-height: 25.83px;
   text-align: center;
+  margin: -10px -33px 0px 0px;
 }
 
 .lots {
@@ -167,9 +176,9 @@
 .lots__heading {
   font-size: 40px;
   line-height: 46.96px;
-  margin-top: 200px;
+  margin-top: 210px;
   margin-left: 65px;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
   text-transform: uppercase;
 }
 
@@ -191,19 +200,18 @@
 }
 
 .card {
-  width: 334px;
-  height: 563px;
+  min-width: 334px;
+  min-height: 563px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.card_type_picture {
+.card_picture {
   position: absolute;
   width: 334px;
   height: 563px;
   z-index: -2;
-  object-fit: cover;
 }
 
 .card__title {
@@ -228,7 +236,7 @@
 }
 
 .lots__look-more-link {
-  padding: 33px 0 0 65px;
+  padding: 31px 0 0 64px;
   font-size: 20px;
   line-height: 23.48px;
   text-decoration: underline;
@@ -236,7 +244,7 @@
 }
 
 .about {
-  margin-top: 144px;
+  margin-top: 146px;
   margin-left: 24px;
   display: grid;
   grid-template-columns: 359px 1fr;
@@ -263,66 +271,43 @@
 
 .about__title {
   margin-top: 138px;
-  font-family: Raleway;
   text-transform: uppercase;
   font-size: 40px;
-  font-weight: 700;
   line-height: 46.96px;
-  text-align: left;
 }
 
-.about__text_first {
-  font-family: Raleway;
+.about__text {
   font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
   letter-spacing: 0.006em;
-  text-align: left;
+}
+
+.about__text_indentation {
   margin-bottom: 26px;
 }
 
-.about__text_second {
-  font-family: Raleway;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-}
-
-.about_text_letter_one {
+.about_text_letter_small {
   letter-spacing: -0.01em;
 }
 
-.about_text_letter_two {
+.about_text_letter_large {
   letter-spacing: 0.04em;
 }
 
-.about_text_letter_three {
+.about_text_letter_medium {
   letter-spacing: 0.01em;
 }
 
 .footer {
   display: flex;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 181px;
+  margin: 180px 50px 88px 50px;
   justify-content: space-between;
   font-size: 18px;
-}
-
-.footer__contact {
-  list-style-type: none;
 }
 
 .footer__contact__list__line {
   text-decoration: none;
   border-bottom: 1px solid #000000;
   line-height: 24px;
-}
-.footer__contact__address {
-  font-style: normal;
-  line-height: 24.3px;
-  text-align: left;
 }
 
 .footer__menu-list {
@@ -342,7 +327,7 @@
 
 .footer__social-list {
   list-style-type: none;
-  width: 240px;
+  min-width: 240px;
   display: flex;
   justify-content: space-between;
 }
