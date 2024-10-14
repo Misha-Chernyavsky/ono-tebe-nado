@@ -1,4 +1,4 @@
-header {
+.header {
   box-sizing: border-box;
   width: 1052px;
   display: grid;
@@ -59,9 +59,10 @@ header {
   align-items: flex-start;
 }
 
-.header__contact__list__line {
+.contact__list {
   text-decoration: none;
   border-bottom: 1px solid #000000;
+  line-height: 24px;
 }
 
 .contact__address {
@@ -73,20 +74,14 @@ header {
   position: relative;
   text-transform: uppercase;
   color: #ffffff;
-  min-width: 1100px;
   min-height: 757px;
 }
 
 .image {
   object-fit: cover;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.cover_size_image {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  width: 1100px;
-  height: 757px;
   left: 0px;
   top: 0px;
   z-index: -1;
@@ -98,11 +93,6 @@ header {
 }
 
 .cover__image {
-  position: absolute;
-  width: 1100px;
-  height: 757px;
-  left: 0px;
-  top: 0px;
   z-index: -2;
 }
 
@@ -142,17 +132,14 @@ header {
 .cover__description {
   display: flex;
   justify-content: space-between;
-  padding: 144px 82px 0 79px;
+  padding: 133px 49px 0 76px;
   margin-bottom: 19px;
 }
 
 .cover__description-text {
   font-size: 22px;
-  font-weight: 400;
-  line-height: 28px;
-  text-align: left;
   word-spacing: 19px;
-  max-height: 100%;
+  padding-top: 13px;
 }
 
 .letter-spacing-description {
@@ -170,7 +157,6 @@ header {
   font-weight: 500;
   line-height: 25.83px;
   text-align: center;
-  margin: -10px -33px 0px 0px;
 }
 
 .lots {
@@ -197,28 +183,16 @@ header {
   gap: 25px;
 }
 
-.lots_size_image {
-  position: absolute;
-  width: 334px;
-  height: 563px;
-  z-index: -1;
-}
-
 .card {
   position: relative;
-  min-width: 334px;
-  min-height: 563px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .card_picture {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 334px;
-  height: 563px;
   z-index: -2;
 }
 
@@ -310,12 +284,6 @@ header {
   margin: 180px 50px 88px 50px;
   justify-content: space-between;
   font-size: 18px;
-}
-
-.footer__contact__list__line {
-  text-decoration: none;
-  border-bottom: 1px solid #000000;
-  line-height: 24px;
 }
 
 .footer__menu-list {
